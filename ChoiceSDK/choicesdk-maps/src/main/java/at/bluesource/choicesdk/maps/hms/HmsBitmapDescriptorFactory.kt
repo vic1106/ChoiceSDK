@@ -61,7 +61,7 @@ internal class HmsBitmapDescriptorFactory : BitmapDescriptorFactory {
 
     override fun fromResource(resourceId: Int): BitmapDescriptor {
         // Workaround for NullPointerException, see https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides-V5/faq-0000001050166999-V5#EN-US_TOPIC_0000001050166999__section6660927203220
-        com.huawei.hms.maps.MapsInitializer.initialize(ChoiceSdk.getContext())
+//        com.huawei.hms.maps.MapsInitializer.initialize(ChoiceSdk.getContext())
 
         return BitmapDescriptor.HmsBitmapDescriptor(
             com.huawei.hms.maps.model.BitmapDescriptorFactory.fromResource(
